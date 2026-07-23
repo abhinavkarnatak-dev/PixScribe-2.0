@@ -52,8 +52,17 @@ export default function PrivacyPage() {
       <p>
         We use your IP address transiently for rate limiting on signup, login,
         and generation. These counters are short-lived and expire automatically.
-        We do not run third-party analytics, advertising trackers, or session
-        recording.
+      </p>
+      <p>
+        We use <strong>Vercel Web Analytics</strong> to count page views and see
+        which pages people actually use. It is cookieless and does not follow you
+        across other websites. It records the page visited plus coarse technical
+        details such as country, browser, and device type, all of it aggregated.
+        It does not record your name, email, prompts, or images, does not build a
+        profile of you, and does not replay your session.
+      </p>
+      <p>
+        We run no advertising trackers and no session recording.
       </p>
 
       <h2>2. Cookies</h2>
@@ -64,8 +73,9 @@ export default function PrivacyPage() {
         production. It lasts 30 days or until you sign out.
       </p>
       <p>
-        There are no advertising, analytics, or cross-site tracking cookies, so
-        there is no consent banner to dismiss.
+        Our analytics is cookieless, so it adds nothing here. There are no
+        advertising or cross-site tracking cookies, and therefore no consent
+        banner to dismiss.
       </p>
 
       <h2>3. Why we process your data</h2>
@@ -96,7 +106,7 @@ export default function PrivacyPage() {
       </p>
 
       <h2>4. Who else sees your data</h2>
-      <p>We share the minimum necessary with three categories of processor:</p>
+      <p>We share the minimum necessary with four categories of processor:</p>
       <ul>
         <li>
           <strong>ClipDrop</strong> receives your prompt text in order to
@@ -112,6 +122,11 @@ export default function PrivacyPage() {
           <strong>Razorpay</strong> handles payment. They receive your name and
           email to prefill checkout, plus whatever payment details you give them
           directly.
+        </li>
+        <li>
+          <strong>Vercel</strong> hosts the application and provides the
+          cookieless analytics described above. As the host, their infrastructure
+          necessarily processes requests you make to the site.
         </li>
       </ul>
       <p>

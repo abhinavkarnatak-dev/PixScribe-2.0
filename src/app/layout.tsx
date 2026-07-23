@@ -5,6 +5,7 @@ import {
   Geist_Mono,
   Instrument_Serif,
 } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { SITE } from "@/config/site";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { ToastProvider } from "@/components/providers/toast-provider";
@@ -82,6 +83,9 @@ export default async function RootLayout({
         <ToastProvider>
           <AuthProvider initialUser={initialUser}>{children}</AuthProvider>
         </ToastProvider>
+        {/* Injects the tracking script only when running on Vercel, so local
+            development and self-hosted builds stay clean. */}
+        <Analytics />
       </body>
     </html>
   );

@@ -31,7 +31,7 @@ export function ShowcaseMarquee({
             reverse: true,
           },
         ]
-      : [{ images: SHOWCASE_IMAGES, duration: "72s", reverse: false }];
+      : [{ images: SHOWCASE_IMAGES, duration: "36s", reverse: false }];
 
   return (
     <div className={cn("relative", className)}>
